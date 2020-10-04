@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Issue Tracker</title>
+</head>
+
+<body>
+    <header class="container header text-center mt-2">
+        <h3>Issue Tracker</h3>
+    </header>
+
+    <main class="container content">
+
+        <div class="row justify-content-md-center">
+            <div class="col-sm-8 pt-3 pb-3 mb-3 form">
+                <form>
+                    <h5>Report New Issue</h5>
+                    <hr>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="issue--desc" placeholder="Enter Issue details">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="issue--sev" id="issue--sev">
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="issue--assign" placeholder="Assigned to">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm issue-submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-8 pt-3 pb-3 mb-3 m-auto">
+                <div class="issue--list">
+                    <!-- 
+                    <div class="issue--detail">
+                        <p>Issue ID: <span>1234-5678-8901</span></p>
+                        <hr>
+                        <h6>Application is not loading</h6>
+                        <p class="label label-info"><span class="fa fa-shield"></span> Medium <span class="fa fa-user"></span> Jithin Jose</p>
+                        <hr>
+                        <a class="btn btn-success btn-sm" href="#">Close</a>
+                        <a class="btn btn-danger btn-sm" href="#">Delete</a>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container footer text-center">
+        <p>&copy; Jithin Jose</p>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
